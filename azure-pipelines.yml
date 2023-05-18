@@ -31,3 +31,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
+- task: Gradle@3
+  displayName: 'gradlew build'
+  inputs:
+    workingDirectory: '$(Build.SourcesDirectory)/TestPath'
